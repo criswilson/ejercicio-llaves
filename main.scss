@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #333;
+  font-family: sans-serif;
+  .flex-item {
+    flex-grow: 1;
+    margin: 20px;
+    max-width: 300px;
+    border: 2px solid #333;
+    padding: 0 20px;
+    .llave-img {
+      width: 300px;
+    }
+    .modelo {
+      color: #888;
+      margin: 0;
+    }
+    .nombre {
+      margin: 0;
+    }
+    .precio {
+      .negrita {
+        color: #71a154;
+      }
+    }
+  }
+
+  .flex-item:hover {
+    border-color: #71a154;
+    box-shadow: 0px 0px 30px #317124;
+  }
+
+  .flex-item:focus {
+    border-color: #71a154;
+    box-shadow: 0px 0px 30px #317124;
+  }
+}
+
+.formulario {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  .send-button {
+    background: #71a154;
+    color: #fff;
+    border: none;
+    padding: 12px 36px;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+}
